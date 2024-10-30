@@ -2,8 +2,8 @@
 #include <ESP8266WebServer.h>
 #include <ThingSpeak.h>
 
-const char *ssid = "halo"; // Change to your WiFi name
-const char *password = "karsamarintara"; // Change to your WiFi password
+const char *ssid = "SEI"; // Change to your WiFi name
+const char *password = "kizusei<3"; // Change to your WiFi password
 
 int motorPin1 = D1; // Connect this to one of the motor terminals
 int motorPin2 = D2; // Connect this to the other motor terminal
@@ -73,8 +73,8 @@ const char *html = R"(
 )";
 
 // Code to connect to ThingSpeak
-const char *thingSpeakApiKey = "ETSZILW3JETPFZ9"; // Change to your API key
-const int thingSpeakChannel = 2288005; // Change to your channel ID
+const char *thingSpeakApiKey = "QJ4XKVJFJNOYCPBQ"; // Change to your API key
+const int thingSpeakChannel = 2721758; // Change to your channel ID
 WiFiClient client;
 
 void updateThingSpeak(int status) {
@@ -122,7 +122,9 @@ void setup() {
     server.send(200, "text/html", html);
   });
   server.begin();
+  
 }
 void loop() {
   server.handleClient();
+  Serial.println(WiFi.localIP());
 }
