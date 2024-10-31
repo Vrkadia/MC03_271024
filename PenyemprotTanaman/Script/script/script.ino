@@ -13,9 +13,9 @@ int pole3[] = {0, 1, 1, 1, 0, 0, 0, 0, 0};
 int pole4[] = {1, 1, 0, 0, 0, 0, 0, 1, 0};
 int poleStep = 0;
 int dirStatus = 0; // 0 = Motor Off, 1 = CW, -1 = CCW
-const char *ssid = "Infinix HOT 10S";
-const char *password = "password";
-const char *thingSpeakApiKey = "JR502MATWW3MFJJV"; // Change to your ThingSpeak API Key
+const char *ssid = "SEI";
+const char *password = "kizusei<3";
+const char *thingSpeakApiKey = "QPBNRDJY0TIBSJEQ"; // Change to your ThingSpeak API Key
 const char *thingSpeakField1 = "field1"; // For status
 const char *thingSpeakField2 = "field2"; // For speed
 
